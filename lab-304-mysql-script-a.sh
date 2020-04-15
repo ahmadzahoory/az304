@@ -13,5 +13,5 @@ composer require guzzlehttp/guzzle
 cd /var/www/html/
 rm index.html
 wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-mysql-code-a.zip
-unzip lab-304-db-code-a.zip
+unzip lab-304-mysql-code-a.zip
 systemctl restart apache2.service

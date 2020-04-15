@@ -12,6 +12,6 @@ php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 composer require guzzlehttp/guzzle
 cd /var/www/html/
 rm index.html
-wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-mysql-code-b.zip
-unzip lab-304-mysql-code-b.zip
+wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-mysql-code.zip
+unzip lab-304-mysql-code.zip
 systemctl restart apache2.service

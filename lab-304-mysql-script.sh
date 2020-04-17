@@ -10,7 +10,7 @@ apt install -y curl php-cli php7.2-xml php-mbstring git unzip
 cd /var/www/html/
 curl -sS https://getcomposer.org/installer -o composer-setup.php
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-composer require guzzlehttp/guzzle
+composer require guzzlehttp/guzzle --working-dir=/var/www/html
 rm index.html
 wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-mysql-code.zip
 unzip lab-304-mysql-code.zip

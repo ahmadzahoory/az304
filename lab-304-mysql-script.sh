@@ -1,18 +1,16 @@
 #!/bin/sh
-apt update
-apt -y upgrade
-apt install -y apache2
-apt install -y wget
-apt install -y unzip
-apt-get install -y mysql-server
-apt install curl
-apt install -y php libapache2-mod-php php-mysql
-apt install -y curl php-cli php7.2-xml php-mbstring git unzip
-curl -sS https://getcomposer.org/installer -o composer-setup.php
-php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-composer require guzzlehttp/guzzle --working-dir=/var/www/html
-cd /var/www/html/
-rm index.html
-wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-mysql-code.zip
-unzip lab-304-mysql-code.zip
-systemctl restart apache2.service
+sudo apt update
+sudo apt -y upgrade
+sudo apt install -y apache2 wget unzip
+sudo apt-get install -y mysql-server
+sudo apt install curl
+sudo apt install -y php libapache2-mod-php php-mysql
+sudo apt install -y curl php-cli php7.2-xml php-mbstring git
+sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+sudo composer require guzzlehttp/guzzle --working-dir=/var/www/html
+sudo cd /var/www/html/
+sudo rm index.html
+sudo wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-mysql-code.zip
+sudo unzip lab-304-mysql-code.zip
+sudo systemctl restart apache2.service

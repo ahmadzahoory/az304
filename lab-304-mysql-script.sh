@@ -9,7 +9,7 @@ sudo apt install -y curl php-cli php7.2-xml php-mbstring git
 sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 sudo composer require guzzlehttp/guzzle --working-dir=/var/www/html
-sudo cd /var/www/html/
+cd /var/www/html/
 sudo rm index.html
 sudo wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-mysql-code.zip
 sudo unzip lab-304-mysql-code.zip

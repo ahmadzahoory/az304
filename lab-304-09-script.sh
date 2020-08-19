@@ -16,6 +16,6 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 sudo composer require guzzlehttp/guzzle --working-dir=/var/www/html
 cd /var/www/html/
 sudo rm index.html
-sudo wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-04-code.zip
-sudo unzip lab-304-04-code.zip
+sudo wget https://raw.githubusercontent.com/ahmadzahoory/az304/master/lab-304-09-code.zip
+sudo unzip lab-304-09-code.zip
 sudo systemctl restart apache2.service
